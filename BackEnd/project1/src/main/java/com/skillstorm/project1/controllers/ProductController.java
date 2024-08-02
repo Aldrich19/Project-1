@@ -25,7 +25,7 @@ public class ProductController {
 @Autowired
 private ProductService productService;
 
-
+    // Adding a new product
     @PostMapping("warehouse/{warehouseId}/product")
     public ResponseEntity<ProductDTO> addProduct(@RequestBody ProductDTO productDTO,
                                                  @PathVariable Long warehouseId){

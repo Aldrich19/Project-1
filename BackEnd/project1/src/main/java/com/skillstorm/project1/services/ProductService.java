@@ -24,7 +24,7 @@ private WarehouseRepository warehouseRepository;
 
 @Autowired
 private ModelMapper modelMapper;
-
+//Add product
 public ProductDTO addProduct(Long warehouseId, ProductDTO productDTO) {
     Warehouse warehouse = warehouseRepository.findById(warehouseId)
                 .orElseThrow(() ->

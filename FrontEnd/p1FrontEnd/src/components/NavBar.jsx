@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 function NavbarBootstrap (){
 
-  
+  //Navbar handling naigation with react=router-dom navlinks
   
   return(
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -14,13 +14,8 @@ function NavbarBootstrap (){
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink to="/" id="text"
-        style={{
-          margin: 3 
-        }}>Home</NavLink>
-              <NavLink to="/search" >Search</NavLink>
+              <NavLink to="/" id="text">Home</NavLink>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown" >
-                
                 <NavLink to="/addwarehouse">Add Warehouse</NavLink>
                 <NavDropdown.Divider />
                 <NavLink to="/viewwarehousesall">All Warehouses</NavLink>

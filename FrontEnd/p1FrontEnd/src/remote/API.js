@@ -12,7 +12,7 @@ export const addWarehouse = async (warehouseLocation) => {
       .catch((err) => console.log('Error attempting to add warehouse. ', err));
   };
 
-
+// Add product
 export const addProduct = async (productName, description, quantity, price, warehouseId) => {
     console.log(productName, description, quantity, price, warehouseId);
     return client.post(`/warehouse/${warehouseId}/product`, {productName, description, quantity, price, warehouseId})

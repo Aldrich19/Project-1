@@ -22,7 +22,6 @@ function App() {
             <Route exact path="/addproduct" element={<AddProductsPage />} />
             <Route exact path="/viewwarehousesall" element={<ViewWarehousePage />} />
             <Route exact path="/vieproductsall" element={<ViewProductsPage />} />
-            <Route exact path="/search" element={<SearchPage />} />
         </Routes>
     </Router>
     </div>
