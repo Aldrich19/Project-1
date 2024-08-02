@@ -78,10 +78,7 @@ public ProductDTO updateProduct(Long productId, ProductDTO productDTO) {
     .orElseThrow(() -> new ResourceNotFoundException("Product", "productId", productId));
 
 Product product = modelMapper.map(productDTO, Product.class);
-productFromDb.setProductName(product.getProductName());
-productFromDb.setDescription(product.getDescription());
 productFromDb.setQuantity(product.getQuantity());
-productFromDb.setPrice(product.getPrice());
 Product savedProduct = productRepository.save(productFromDb);
 
 return modelMapper.map(savedProduct, ProductDTO.class);

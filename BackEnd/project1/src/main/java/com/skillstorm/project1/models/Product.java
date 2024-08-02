@@ -26,7 +26,7 @@ public class Product {
 
     private Integer quantity;
 
-    private Double price;
+    private String price;
 
     @ManyToOne
     @JoinColumn(name = "warehouse_id")

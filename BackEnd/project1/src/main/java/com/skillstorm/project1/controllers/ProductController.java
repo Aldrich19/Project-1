@@ -19,7 +19,7 @@ import com.skillstorm.project1.services.ProductService;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:5173")
 public class ProductController {
     
 @Autowired
